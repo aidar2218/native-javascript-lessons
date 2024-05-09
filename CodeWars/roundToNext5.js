@@ -18,14 +18,8 @@
 
 
 function roundToNext5(n){
-    // if (n % 5 !== 0) {
-    //     return Math.floor(n / 5) * 5 + 5;
-    // }
-    // return n;
-    return n % 5 !== 0
-        ? Math.floor(n / 5) * 5 + 5
-        : n;
+    return Math.ceil(n / 5) * 5;
 }
 
-console.log(roundToNext5(22));
+console.log(roundToNext5(31));
 console.log(roundToNext5(20));
